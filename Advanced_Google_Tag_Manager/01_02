@@ -1,0 +1,14 @@
+<!Capture the author name-->
+function() {
+  return document.getElementById('author-name').innerText;
+}
+
+<!Capture the publish date-->
+function() {
+return document.getElementById('publish-date').innerText;
+}
+
+<!Capture the blog category-->
+function() {
+return document.getElementsByClassName('post-category')[0].innerText;
+}

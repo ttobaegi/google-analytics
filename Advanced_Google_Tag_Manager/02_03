@@ -1,0 +1,4 @@
+<!Getting variables for product views-->
+function() {
+return document.querySelector('.pg-h2').textContent;
+}

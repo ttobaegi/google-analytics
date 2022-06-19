@@ -1,0 +1,5 @@
+<!Fill the form field from the variable-->
+<script>document.getElementById('SOURCE').value="{{utm_source}}";</script>
+
+<!Check hidden field value-->
+document.getElementById('SOURCE').value

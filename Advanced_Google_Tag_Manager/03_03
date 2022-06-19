@@ -1,0 +1,7 @@
+<script>
+document.querySelector('meta[name="description"]').remove();
+var meta_desc = document.createElement('meta');
+meta_desc.name = 'description';
+meta_desc.content = "Breaking News! Apple’s iOS14 release has caused as much as a 40-50% decline in tracking visibility for advertisers.";
+document.querySelector('head').append(meta_desc);
+</script>

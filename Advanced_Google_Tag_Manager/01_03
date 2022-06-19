@@ -1,0 +1,15 @@
+<!Capture the price of a product in the shopping cart-->
+function() {
+    var cartPrices = document.getElementsByClassName('CartLineItem__price');
+  return parseFloat(cartPrices[0].innerText.replace(/\$/g,''));
+}
+
+<!Add up the price of multiple products-->
+function() {
+var cartPrices = document.getElementsByClassName('CartLineItem__price');
+var totalPrice = 0;
+for (i=0;i<cartPrices.length;i++) {
+	totalPrice += parseFloat(cartPrices[i].innerText.replace(/\$/g,''));
+}
+return totalPrice;
+}

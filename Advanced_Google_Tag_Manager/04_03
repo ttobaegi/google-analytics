@@ -1,0 +1,13 @@
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+<script>
+var cookieName = 'trackingAccepted';
+
+if(typeof Cookies.get(cookieName) !== 'undefined') {
+$('.tracking-consent').remove();
+}
+
+$('.accept-tracking').on('click', function(){
+Cookies.set(cookieName, 'ok', { expires: 180 });
+})
+</script>

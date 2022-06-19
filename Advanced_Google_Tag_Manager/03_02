@@ -1,0 +1,27 @@
+<script>
+var utm_campaign = new URL(document.location.href).searchParams.get('utm_campaign');
+var h1 = false;
+var para = false;
+
+switch(utm_campaign) {
+
+	case 'san_francisco':
+	case 'palo_alto':
+    	h1 = "SF Growth Engineers";
+    	para = "A community for marketers who code and developers who grow companies in San Francisco. Invites are by referral only.";
+	break;
+
+	case 'new_york':
+    	h1 = "NY Growth Engineers";
+    	para = "A community for marketers who code and developers who grow companies in New York. Invites are by referral only.";
+	break;
+
+	default:
+	break;
+}
+
+if(h1 && para) {
+	document.querySelector('#title').textContent = h1;
+	document.querySelector('#hero').textContent  = para;
+}
+</script>
